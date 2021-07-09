@@ -5,6 +5,10 @@
   "main": "index.js",
   "type": "module",
   "author": "Matt Jennings",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattjennings/remark-reading-time"
+  },
   "license": "ISC",
   "devDependencies": {
     "remark": "^13.0.0"
