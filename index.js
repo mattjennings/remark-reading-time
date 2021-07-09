@@ -14,7 +14,7 @@ export default function readingTime({
     return function (info, file) {
       let text = "";
 
-      visit(info, /text|code/, (node) => {
+      visit(info, ["text", "code"], (node) => {
         text += node.value;
       });
 

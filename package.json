@@ -1,6 +1,6 @@
 {
   "name": "remark-reading-time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds estimated reading time to your markdown files",
   "main": "index.js",
   "type": "module",
