@@ -8,5 +8,5 @@ remark()
     if (err) {
       console.error(err);
     }
-    console.log(file.data.fm);
+    console.log(file.data.readingTime);
   });
