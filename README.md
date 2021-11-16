@@ -8,7 +8,7 @@ Adds estimated reading time to your markdown files using [reading-time](https://
 import readingTime from "remark-reading-time";
 
 remark()
-  .use(readingTime())
+  .use(readingTime)
   .process(markdown, function (err, file) {
     console.log("Reading time is " + file.data.readingTime.text);
   });
@@ -21,7 +21,7 @@ changed:
 import readingTime from "remark-reading-time";
 
 remark()
-  .use(readingTime({ attribute: "myKeyName" }))
+  .use(readingTime, { attribute: "myKeyName" })
   .process(markdown, function (err, file) {
     console.log("Reading time is " + file.data.myKeyName.text);
   });
@@ -32,7 +32,7 @@ remark()
 You can also export the data to MDX files:
 
 ```js
-import {compile} from '@mdx-js/mdx'
+import { compile } from "@mdx-js/mdx";
 import readingTime from "remark-reading-time";
 import readingMdxTime from "remark-reading-time/mdx";
 
@@ -42,6 +42,6 @@ const code = await compile(file, {
       remarkReadingTime,
       readingMdxTime, // register the mdx after the remarkReadingTime plugin
     ],
-  }
+  },
 });
 ```
