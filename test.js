@@ -3,7 +3,7 @@ import readingTime from "./index.js";
 import fs from "fs";
 
 remark()
-  .use(readingTime())
+  .use(readingTime)
   .process(fs.readFileSync("./test.md", "utf-8"), function (err, file) {
     if (err) {
       console.error(err);
