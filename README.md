@@ -33,7 +33,7 @@ You can also export the data to MDX files:
 
 ```js
 import { compile } from "@mdx-js/mdx";
-import readingTime from "remark-reading-time";
+import remarkReadingTime from "remark-reading-time";
 import readingMdxTime from "remark-reading-time/mdx";
 
 const code = await compile(file, {
