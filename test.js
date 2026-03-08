@@ -1,4 +1,4 @@
-import remark from "remark";
+import { remark } from "remark";
 import readingTime from "./index.js";
 import fs from "fs";
 
