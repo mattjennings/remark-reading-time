@@ -45,3 +45,21 @@ const code = await compile(file, {
   },
 });
 ```
+
+### MDSvex
+
+You can also export the data to frontmatter in MDSvex files:
+
+```js
+import { compile } from "mdsvex";
+import remarkReadingTime from "remark-reading-time";
+import readingMdsvexTime from "remark-reading-time/mdsvex";
+
+const code = await compile(file, {
+  remarkPlugins: [
+    remarkReadingTime,
+    readingMdsvexTime, // register the mdsvex after the remarkReadingTime plugin
+  ],
+});
+```
+
